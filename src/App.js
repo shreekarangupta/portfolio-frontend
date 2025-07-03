@@ -304,9 +304,11 @@ function App() {
       <section
         id="about"
         style={{
-          padding: "4rem 2rem",
-          maxWidth: 1100,
-          margin: "auto",
+          width: "100%",
+maxWidth: "1100px",
+margin: "0 auto",
+padding: "2rem 1rem",
+
           transition: "color 0.5s ease",
         }}
       >
@@ -344,7 +346,7 @@ function App() {
       {/* Projects Section */}
       <section
         id="projects"
-        style={{ padding: "4rem 2rem", maxWidth: 1100, margin: "auto" }}
+        style={{ padding: "4rem 2rem", maxWidth: 1100, margin: "0 auto",width:"100%" }}
       >
         <h2
           style={{
@@ -435,9 +437,11 @@ function App() {
       <section
         id="skills"
         style={{
-          padding: "4rem 2rem",
-          maxWidth: 1100,
-          margin: "auto",
+          width: "100%",
+maxWidth: "1100px",
+margin: "0 auto",
+padding: "2rem 1rem",
+
           transition: "color 0.5s ease",
         }}
       >
@@ -618,6 +622,40 @@ function App() {
           box-shadow: 0 12px 25px rgba(0,0,0,0.3);
           transition: transform 0.3s ease;
         }
+          @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .glow-button {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  nav ul {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    background-color: var(--nav-bg);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  section {
+    padding: 2rem 1rem !important;
+  }
+
+  .project-card {
+    padding: 1rem !important;
+  }
+}
+
       `}</style>
     </div>
   );
